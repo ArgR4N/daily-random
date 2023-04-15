@@ -7,7 +7,8 @@ export async function GET() {
   const globalRandom = await DailyRandom.findOne()
     .exec()
     .then((numbers) => {
-      if (!numbers.globalNumber) return NextResponse.json({ numbers: "No global number found" });
+      if (!numbers.globalNumber)
+        return NextResponse.json({ numbers: "No global number found" });
       return numbers.globalNumber;
     });
 
