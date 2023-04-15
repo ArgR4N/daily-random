@@ -9,4 +9,4 @@ const dailyRandomSchema = new Schema<IDailyRandom>({
 });
 
 export default models.DailyRandom ||
-  model<IDailyRandom>("dailyRandom", dailyRandomSchema);
+  model<IDailyRandom>("DailyRandom", dailyRandomSchema);
