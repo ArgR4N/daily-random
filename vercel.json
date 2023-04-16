@@ -4,9 +4,9 @@
   
       {
   
-        "path": "/app/updateNumbers",
+        "path": "/updateNumbers",
   
-        "schedule": "0 5 * * *"
+        "schedule": "0 0 * * *"
   
       }
   
