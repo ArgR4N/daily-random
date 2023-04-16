@@ -8,12 +8,6 @@ const nextConfig = {
     config.experiments = { ...config.experiments, topLevelAwait: true };
     return config;
   },
-  crons: [
-    {
-      path: "/utils/updateNumbers.ts",
-      schedule: "0 0 * * *",
-    },
-  ],
 };
 
 module.exports = nextConfig;
