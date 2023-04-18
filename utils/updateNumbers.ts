@@ -4,7 +4,7 @@ import DailyRandom from "./DailyRandom";
 export async function updateNumbers() {
   await mongoConnect();
   const globalNumber = Math.floor(
-    Math.random() * Math.pow(10, Math.random() * 10 + 1)
+    Math.random() * Math.pow(10, Math.random() * 10 + 1) * 100
   );
   await DailyRandom.findOneAndUpdate({}, { globalNumber }, { upsert: true });
 
