@@ -1,15 +1,8 @@
 {
-
     "crons": [
-  
       {
-  
         "path": "/updateNumbers",
-  
         "schedule": "0 0 * * *"
-  
       }
-  
     ]
-  
-  }
+}

@@ -11,8 +11,8 @@ export async function GET() {
         return NextResponse.json({ numbers: "No global number found" });
       return numbers.globalNumber;
     });
-  
-  console.log(globalRandom)
+
+  console.log(globalRandom);
 
   return NextResponse.json({ globalRandom });
 }
